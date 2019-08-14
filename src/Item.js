@@ -8,7 +8,7 @@ const itemSource = {
   },
   endDrag(props, monitor, component) {
     if (!monitor.didDrop()) {
-      return;
+      return null;
     }
 
     return props.handleDrop(props.item.id);
